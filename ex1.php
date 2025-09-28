@@ -1,7 +1,10 @@
 <?php
+// Проверка наличия данных
 if (isset($_GET['name']) && isset($_GET['age'])) {
+    // Создание переменных
     $name = $_GET['name'];
     $age = $_GET['age'];
+    // Вывод информации
     echo "<h2 style='margin-top: 45vh; font-size: 24px; text-align: center;'>Здравствуйте, $name!</h2>";
     if ($age >= 18) {
         echo "<p style='margin-top: 20px; font-size: 20px; text-align: center;'>Вам $age лет. Вы совершеннолетний.</p>";
@@ -10,6 +13,7 @@ if (isset($_GET['name']) && isset($_GET['age'])) {
     }
 } else {
 ?>
+    <!-- Форма -->
     <!DOCTYPE html>
     <html lang="ru">
 
@@ -86,4 +90,5 @@ if (isset($_GET['name']) && isset($_GET['age'])) {
     </html>
 <?php
 }
+
 ?>
